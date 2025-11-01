@@ -40,5 +40,5 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          name: ReadSMC-EFI
-          path: edk2/Build/ReadSMC/RELEASE_X64/ReadSMC.efi
+          name: edk2-build-output
+          path: edk2/Build/ReadSMC/
