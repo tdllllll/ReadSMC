@@ -35,7 +35,7 @@ jobs:
           cd edk2
           export EDK_TOOLS_PATH=$GITHUB_WORKSPACE/edk2/BaseTools
           . edksetup.sh BaseTools
-          build -p $GITHUB_WORKSPACE/ReadSmcPkg/ReadSmcPkg.dsc
+          build -p ../ReadSmcPkg/ReadSmcPkg.dsc -a X64 -t GCC5 -b DEBUG
 
       - name: Upload
         uses: actions/upload-artifact@v4
